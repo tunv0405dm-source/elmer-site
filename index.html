@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elmer – License tủ Smart Locker trọn đời</title>
+<meta name="description" content="License tủ Smart Locker mua một lần, dùng trọn đời. Nâng cấp, bảo hành, bảo trì và mở rộng kết nối miễn phí.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<style>
+body { margin: 0; }
+.elm {
+  --o: #FFA940;
+  --o-deep: #B96D00;
+  --sun: #FDF1CC;
+  --ink: #2A2113;
+  --muted: #6B5F4B;
+  --line: #F1DDB4;
+  font-family: 'Nunito', 'Segoe UI', Roboto, Arial, sans-serif;
+  color: var(--ink);
+  line-height: 1.6;
+  background: #fff;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+.elm *, .elm *::before, .elm *::after { box-sizing: border-box; }
+.elm h1, .elm h2, .elm h3, .elm p, .elm ul { margin: 0; padding: 0; }
+.elm ul { list-style: none; }
+.elm .elm-w { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+
+.elm .elm-btn {
+  display: flex; align-items: center; justify-content: center;
+  min-height: 52px; padding: 12px 24px; border-radius: 12px;
+  background: #FFA940; color: #2A2113 !important;
+  font-weight: 800; font-size: 1.05rem; text-decoration: none !important;
+  border: 0; transition: background .2s ease;
+}
+.elm .elm-btn:focus-visible { outline: 3px solid #2A2113; outline-offset: 3px; }
+.elm .elm-btn:hover { background: #FF9A1F; }
+
+/* HERO */
+.elm .elm-hero { padding: 72px 0 88px; background: linear-gradient(180deg, #fff 0%, #fff 50%, #FDF1CC 100%); }
+.elm .elm-hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 56px; align-items: center; }
+.elm .elm-hero h1 { font-size: clamp(1.9rem, 4.4vw, 3.25rem); font-weight: 900; line-height: 1.14; letter-spacing: -.01em; color: #2A2113; }
+.elm .elm-lead { margin-top: 18px; max-width: 46ch; font-size: clamp(1rem, 1.6vw, 1.125rem); color: #6B5F4B; }
+
+.elm .elm-price { border: 2px solid #FFA940; border-radius: 20px; background: #fff; padding: 32px; box-shadow: 0 18px 40px -22px rgba(185,109,0,.45); }
+.elm .elm-price-label { font-weight: 700; color: #B96D00; }
+.elm .elm-price-num { margin-top: 6px; font-weight: 900; line-height: 1.05; letter-spacing: -.02em; font-size: clamp(2.2rem, 7.5vw, 3.75rem); color: #FFA940; white-space: nowrap; }
+.elm .elm-price-num small { font-size: 1.05rem; font-weight: 800; color: #2A2113; letter-spacing: 0; margin-left: 6px; }
+.elm .elm-price-note { margin-top: 10px; color: #6B5F4B; font-size: .95rem; }
+.elm .elm-price .elm-btn { margin-top: 24px; }
+
+/* QUYEN LOI */
+.elm .elm-benefits { padding: 80px 0; background: #fff; }
+.elm .elm-tag { display: inline-block; border: 1.5px solid #FFA940; padding: 8px 18px; font-size: 1.2rem; font-weight: 800; color: #FFA940; }
+.elm .elm-sub { margin-top: 18px; font-size: clamp(1.4rem, 3vw, 2.1rem); font-weight: 800; line-height: 1.25; max-width: 24ch; color: #2A2113; }
+.elm .elm-list { margin-top: 36px; border-top: 1px solid #F1DDB4; }
+.elm .elm-item { display: grid; grid-template-columns: 44px 1fr; gap: 20px; padding: 24px 0; border-bottom: 1px solid #F1DDB4; }
+.elm .elm-ico { width: 44px; height: 44px; border-radius: 50%; background: #FFF3DC; display: flex; align-items: center; justify-content: center; }
+.elm .elm-ico svg { width: 22px; height: 22px; stroke: #B96D00; fill: none; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.elm .elm-item h3 { font-size: 1.15rem; font-weight: 800; line-height: 1.35; color: #2A2113; }
+.elm .elm-item p { margin-top: 4px; color: #6B5F4B; max-width: 62ch; }
+.elm .elm-item.elm-key { background: linear-gradient(90deg, #FFF6E2, #fff); border-left: 4px solid #FFA940; padding-left: 16px; padding-right: 16px; border-radius: 0 12px 12px 0; }
+.elm .elm-item.elm-key .elm-ico { background: #FFA940; }
+.elm .elm-item.elm-key .elm-ico svg { stroke: #2A2113; }
+
+/* VE ELMER */
+.elm .elm-about { padding: 72px 0 80px; background: linear-gradient(180deg, #fff 0%, #FDF1CC 100%); }
+.elm .elm-about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: center; }
+.elm .elm-about p { margin-top: 16px; color: #6B5F4B; max-width: 54ch; }
+.elm .elm-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.elm .elm-stat { border: 1.5px solid #FFA940; border-radius: 16px; padding: 20px; background: #fff; }
+.elm .elm-stat b { display: block; font-size: clamp(1.9rem, 5vw, 2.4rem); font-weight: 900; color: #FFA940; line-height: 1.1; }
+.elm .elm-stat span { display: block; margin-top: 4px; font-weight: 700; font-size: .95rem; line-height: 1.4; }
+
+/* CTA */
+.elm .elm-cta { padding: 64px 0 80px; background: #FDF1CC; text-align: center; }
+.elm .elm-cta h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; line-height: 1.3; color: #2A2113; }
+.elm .elm-cta p { margin: 10px auto 0; color: #6B5F4B; max-width: 48ch; }
+.elm .elm-cta .elm-btn { display: inline-flex; min-width: 280px; margin-top: 24px; }
+
+.elm .elm-bar { display: none; }
+
+@media (max-width: 1024px) {
+  .elm .elm-hero-grid, .elm .elm-about-grid { gap: 36px; }
+  .elm .elm-price { padding: 28px; }
+}
+@media (max-width: 820px) {
+  .elm .elm-w { padding: 0 20px; }
+  .elm .elm-hero { padding: 44px 0 56px; }
+  .elm .elm-hero-grid, .elm .elm-about-grid { grid-template-columns: 1fr; gap: 32px; }
+  .elm .elm-benefits { padding: 52px 0; }
+  .elm .elm-about { padding: 52px 0 56px; }
+  .elm .elm-cta { padding: 52px 0 64px; }
+}
+@media (max-width: 560px) {
+  .elm { padding-bottom: 76px; }
+  .elm .elm-price { padding: 24px 20px; border-radius: 16px; }
+  .elm .elm-price-num small { display: block; margin: 4px 0 0; }
+  .elm .elm-item { grid-template-columns: 38px 1fr; gap: 14px; padding: 20px 0; }
+  .elm .elm-ico { width: 38px; height: 38px; }
+  .elm .elm-ico svg { width: 19px; height: 19px; }
+  .elm .elm-item.elm-key { padding-left: 12px; padding-right: 12px; }
+  .elm .elm-cta .elm-btn { display: flex; min-width: 0; }
+  .elm .elm-bar {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 1030;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
+    background: #fff; border-top: 1.5px solid #FFA940;
+  }
+  .elm .elm-bar-price { font-weight: 900; color: #B96D00; line-height: 1.2; font-size: 1.05rem; }
+  .elm .elm-bar-price small { display: block; font-weight: 700; color: #6B5F4B; font-size: .78rem; }
+  .elm .elm-bar .elm-btn { min-height: 46px; padding: 10px 20px; font-size: 1rem; }
+}
+</style>
+</head>
+<body>
+      <div class="elm">
+
+        <section class="elm-hero">
+          <div class="elm-w elm-hero-grid">
+            <div>
+              <h1>License tủ Smart Locker<br/>mua một lần, dùng trọn đời</h1>
+              <p class="elm-lead">Một mức giá duy nhất cho mỗi tủ. Không phí nâng cấp, không phí mở rộng kết nối, không phí bảo trì về sau.</p>
+            </div>
+            <div class="elm-price">
+              <div class="elm-price-label">License trọn đời</div>
+              <div class="elm-price-num">100.000.000<small>đ / tủ</small></div>
+              <p class="elm-price-note">Thanh toán một lần. Áp dụng cho từng tủ Smart Locker.</p>
+              <a class="elm-btn" href="/contactus">Liên hệ đặt license</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="elm-benefits">
+          <div class="elm-w">
+            <span class="elm-tag">Quyền lợi đi kèm</span>
+            <h2 class="elm-sub">Năm cam kết cho mỗi tủ có license</h2>
+            <ul class="elm-list">
+              <li class="elm-item">
+                <div class="elm-ico"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></div>
+                <div>
+                  <h3>Nâng cấp phần mềm miễn phí</h3>
+                  <p>Mọi phiên bản phần mềm mới đều được cập nhật cho tủ của bạn, không tính thêm phí.</p>
+                </div>
+              </li>
+              <li class="elm-item">
+                <div class="elm-ico"><svg viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></div>
+                <div>
+                  <h3>Mở rộng kết nối miễn phí trọn đời</h3>
+                  <p>Kết nối thêm đơn vị vận chuyển và hệ thống PUDO mới qua nền tảng Elmer, không mất phí tích hợp.</p>
+                </div>
+              </li>
+              <li class="elm-item">
+                <div class="elm-ico"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5 5L3 18l3 3 6.7-6.7a4 4 0 0 0 5-5l-2.4 2.4-2.6-.6-.6-2.6z"/></svg></div>
+                <div>
+                  <h3>Bảo hành, bảo trì miễn phí trọn đời</h3>
+                  <p>Tủ được bảo hành và bảo trì trong suốt thời gian sử dụng, không phát sinh chi phí.</p>
+                </div>
+              </li>
+              <li class="elm-item elm-key">
+                <div class="elm-ico"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                <div>
+                  <h3>Đền bù theo doanh thu khi tủ gián đoạn</h3>
+                  <p>Tủ gặp sự cố quá 2 tiếng, chúng tôi đền bù vi phạm theo doanh thu của ngày kinh doanh đó.</p>
+                </div>
+              </li>
+              <li class="elm-item">
+                <div class="elm-ico"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
+                <div>
+                  <h3>Nâng cấp tính năng AI miễn phí</h3>
+                  <p>Các tính năng AI mới được bổ sung cho tủ của bạn theo tiêu chuẩn Adela, không tính thêm phí.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="elm-about">
+          <div class="elm-w elm-about-grid">
+            <div>
+              <span class="elm-tag">Về Elmer</span>
+              <p>Elmer là nền tảng công nghệ trung lập, kết nối các đơn vị vận chuyển với hệ thống PUDO và Smart Locker tại một điểm tích hợp duy nhất. Tích hợp một lần, sử dụng toàn bộ mạng lưới giao nhận.</p>
+            </div>
+            <div class="elm-stats">
+              <div class="elm-stat"><b>+500</b><span>Điểm giao nhận Smart Locker</span></div>
+              <div class="elm-stat"><b>+100</b><span>Điểm giao nhận PUDO</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="elm-cta">
+          <div class="elm-w">
+            <h2>Sẵn sàng trang bị license cho tủ của bạn?</h2>
+            <p>Để lại thông tin, đội ngũ Elmer sẽ liên hệ tư vấn và báo hợp đồng.</p>
+            <a class="elm-btn" href="/contactus">Liên hệ đặt license</a>
+          </div>
+        </section>
+
+        <div class="elm-bar">
+          <div class="elm-bar-price">100 triệu / tủ<small>License trọn đời</small></div>
+          <a class="elm-btn" href="/contactus">Liên hệ</a>
+        </div>
+
+      </div>
+</body>
+</html>
